@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="app-container">
+    <div class="header">
+        <h1>Chief AI</h1>
+        <p id="welcome-message">Tell me what ingredients you have, and I'll suggest recipes you can make!</p>
+    </div>
+
+    <div id="example-prompts" class="example-prompts">
+        <div class="example-prompt" onclick="fillPrompt('I have chicken, rice, and vegetables. What can I make?')">
+            <i class="fas fa-utensils"></i> "I have chicken, rice, and vegetables..."
+        </div>
+        <div class="example-prompt" onclick="fillPrompt('What can I make with eggs, flour, and milk?')">
+            <i class="fas fa-egg"></i> "What can I make with eggs, flour..."
+        </div>
+        <div class="example-prompt" onclick="fillPrompt('Vegetarian recipes with beans and quinoa')">
+            <i class="fas fa-leaf"></i> "Vegetarian recipes with beans..."
+        </div>
+    </div>
+
+    <div class="chat-container" id="chat-container">
+    </div>
+
+    <div class="input-container">
+        <div class="input-box">
+            <textarea id="message-input" placeholder="Message Chef AI..." rows="1"></textarea>
+            <button id="send-btn" disabled>
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+        <div class="disclaimer">
+            Chef AI may produce inaccurate information. Always check recipes before cooking.
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
