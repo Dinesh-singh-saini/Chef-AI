@@ -1,4 +1,4 @@
-# Chief AI - Your Smart Kitchen Assistant 
+# Chef AI - Your Smart Kitchen Assistant 
 
 Chief AI is an AI-powered recipe generator that helps you discover delicious dishes based on the ingredients you already have. Simply tell it what's in your kitchen, and it will suggest creative recipes with detailed cooking instructions.
 
